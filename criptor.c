@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define version 1.00
+#define version 1.02
 
 char * CarregarArquivo(char * filename);
 void menu_command(char * command,char * filename,char * chave);
@@ -124,7 +124,7 @@ void GravarEmArquivo(char * Memory,char * filename){
 
 void menu_command(char * command,char * filename,char * chave){
 	char * Memory = NULL;
-	if(strcmp(command,"criptofile") == 0){
+	if(strcmp(command,"criptorfile") == 0){
 		Memory = CarregarArquivo(filename);
 		if(Memory == NULL){
 			printf("[F] Nao foi possivel carregar o arquivo. \n");
@@ -134,8 +134,9 @@ void menu_command(char * command,char * filename,char * chave){
 			return;
 		}
 		GravarEmArquivo(Memory,filename);
+		return;
 	}
-	if(strcmp(command,"descriptofile") == 0){
+	if(strcmp(command,"descriptorfile") == 0){
 		Memory = CarregarArquivo(filename);
 		if(Memory == NULL){
 			printf("[F] Nao foi possivel carregar o arquivo. \n");
@@ -145,5 +146,7 @@ void menu_command(char * command,char * filename,char * chave){
 			return;
 		}
 		GravarEmArquivo(Memory,filename);
+		return;
 	}
+	printf("Digite  um comando valido. \n");
 }
