@@ -4,5 +4,5 @@ Comandos:
   
   descriptorfile => Comando para descriptografar o arquivo
 
-Execução do executavel:
+Execução:
 ./criptor <COMANDOS> <Nome do Arquvo> <Chave>
