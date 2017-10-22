@@ -1,8 +1,8 @@
 Comandos:
 
-  criptorfile => Comando para criptografar o arquivo
+  criptofile => Comando para criptografar o arquivo
   
-  descriptorfile => Comando para descriptografar o arquivo
+  descriptofile => Comando para descriptografar o arquivo
 
 Execução:
 ./criptor |Comando| |Nome do Arquvo| |Chave|
